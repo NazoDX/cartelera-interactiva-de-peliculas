@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="container-menu">
+            <div id="menu">
+                <div id="logo">
+                    <img src="/img/logo.png" alt="Logo">
+                </div>
+                <div id="menu-item">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/peliculas.html">Películas</a>
+                    <a href="#">Registro</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <h3>Regístrate para recibir notificaciones por correo sobre nuevas películas</h3>
+
+    <form action="/index.html" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="confirmar-correo">Confirmar correo:</label>
+        <input type="email" id="confirmar-correo" name="confirmar-correo" required><br><br>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+    <br><br>
+
+    <footer>
+        <p>© CinemaPlus.co <br>Encuentra aquí la mejor selección de películas en línea de alta calidad</p>
+        <img src="/img/redes.png" alt="Imagen CinemaPlus">
+    </footer>
+</body>
+
+</html>

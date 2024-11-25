@@ -1,0 +1,250 @@
+/* --- Estilo general para todo el cuerpo de la página --- */
+body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+    font-family: Arial, sans-serif; /* Define la fuente */
+    color: #fff; /* Color del texto blanco */
+    background-color: #000; /* Fondo negro */
+    background-image: url("../img/fondo.webp"); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* --- Estilo para el contenedor principal --- */
+main {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y semi-transparente */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    width: 90%; /* Ancho al 90% del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* --- Estructura principal de la sección de película --- */
+.pelicula {
+    display: flex; /* Usa flexbox para organizar el contenido */
+    align-items: flex-start; /* Alineación vertical al inicio */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+/* --- Estilo para la sección de información de la película --- */
+.informacion {
+    flex: 1; /* La información ocupa todo el espacio disponible */
+    color: #fff; /* Color de texto blanco */
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+/* --- Estilo para el título principal de la película --- */
+.informacion h2 {
+    font-size: 24px; /* Tamaño del texto del título */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+    color: #ffc107; /* Color amarillo */
+}
+
+/* --- Estilo para los subtítulos dentro de la información de la película --- */
+.informacion h3 {
+    margin: 10px 0 5px; /* Espaciado en los márgenes superior e inferior */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #ddd; /* Color gris claro */
+}
+
+/* --- Estilo para los párrafos dentro de la información de la película --- */
+.informacion p {
+    font-size: 16px; /* Tamaño de la fuente de los párrafos */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* --- Estilo para la imagen de la portada --- */
+.portada img {
+    width: 300px; /* Ancho fijo para la imagen */
+    height: auto; /* Mantener proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra en la imagen */
+}
+
+/* --- Estilo para el encabezado (header) --- */
+header {
+    background: #2b2b2b; /* Fondo gris oscuro */
+    padding: 10px 20px; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+}
+
+/* --- Estilo para la imagen dentro del encabezado --- */
+header img {
+    height: 50px; /* Definir la altura de la imagen */
+}
+
+/* --- Estilo para los enlaces del menú --- */
+#menu-item a {
+    color: #fff; /* Color blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    margin: 15px; /* Margen entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+/* --- Efecto hover para los enlaces del menú --- */
+#menu-item a:hover {
+    color: #ffc107; /* Cambiar color a amarillo al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* --- Estilo para el pie de página (footer) --- */
+footer {
+  background-color: #ffffff; /* Fondo blanco */
+  display: flex; /* Usar flexbox */
+  flex-direction: row; /* Elementos en fila */
+  align-items: center; /* Alineación vertical */
+  justify-content: space-around; /* Distribuir los elementos uniformemente */
+}
+
+/* --- Estilo para el texto dentro del pie de página --- */
+footer p {
+  color: #272424; /* Color del texto oscuro */
+  font-size: 20px; /* Tamaño de la fuente */
+}
+
+/* --- Estilo para las imágenes dentro del pie de página --- */
+footer img {
+  width: 15%; /* Escala la imagen al 15% */
+}
+
+/* --- Títulos principales dentro de la sección de información --- */
+.informacion h2 {
+    font-size: 36px; /* Título principal más grande */
+    color: #ffc107; /* Color amarillo */
+    margin-bottom: 20px; /* Margen inferior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+/* --- Estilo para los subtítulos dentro de la información de la película --- */
+.informacion h3 {
+    font-size: 24px; /* Tamaño de los subtítulos */
+    color: #ffffff; /* Color blanco */
+    margin-top: 15px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+    border-bottom: 2px solid #ffc107; /* Subrayado amarillo */
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding-bottom: 5px; /* Padding en la parte inferior */
+}
+
+/* --- Estilo para los párrafos dentro de la sección de información --- */
+.informacion p {
+    font-size: 18px; /* Tamaño de la fuente del párrafo */
+    text-align: justify; /* Justificar el texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* --- Estilo para las listas de información dentro de la sección de información --- */
+.informacion ul {
+    list-style: none; /* Eliminar los puntos de lista */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.informacion ul li {
+    font-size: 18px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Margen inferior */
+    position: relative; /* Para la posición de los iconos */
+    padding-left: 30px; /* Espacio a la izquierda para los iconos */
+}
+
+.informacion ul li::before {
+    content: '★'; /* Estrella como icono de lista */
+    position: absolute; /* Posicionar la estrella */
+    left: 0; /* Alineación a la izquierda */
+    color: #ffc107; /* Color amarillo para la estrella */
+    font-size: 20px; /* Tamaño de la estrella */
+}
+
+/* --- Estilo para los enlaces dentro de las listas --- */
+.informacion ul li a {
+    color: #18a9ec; /* Color azul para los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease, transform 0.2s ease; /* Transición suave para el cambio de color */
+}
+
+/* --- Efecto hover para los enlaces dentro de las listas --- */
+.informacion ul li a:hover {
+    color: #ffc107; /* Cambiar color a amarillo al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* --- Estilos para dispositivos de escritorio (pantallas grandes) --- */
+@media (min-width: 769px) {
+    .pelicula {
+        display: flex;
+        flex-direction: row; /* Los elementos se organizan en fila */
+    }
+    .portada img {
+        width: 300px; /* Tamaño de la imagen */
+    }
+    .informacion h2 {
+        font-size: 36px; /* Título más grande */
+    }
+    .informacion h3 {
+        font-size: 24px; /* Subtítulos más grandes */
+    }
+}
+
+/* --- Estilos para pantallas de tablet (de 768px a 481px) --- */
+@media (max-width: 768px) and (min-width: 481px) {
+    body {
+        font-size: 16px; /* Reducir el tamaño de fuente en tabletas */
+    }
+    .pelicula {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    .portada img {
+        width: 80%; /* Reducir el tamaño de la imagen */
+        max-width: 250px; /* Establecer un tamaño máximo */
+    }
+    .informacion h2 {
+        font-size: 28px; /* Reducir tamaño del título */
+    }
+    .informacion h3 {
+        font-size: 20px; /* Reducir tamaño de los subtítulos */
+    }
+    .informacion p {
+        font-size: 16px; /* Reducir el tamaño de los párrafos */
+    }
+    footer p {
+        font-size: 16px; /* Reducir tamaño del texto en el pie de página */
+    }
+}
+
+/* --- Estilos para pantallas pequeñas (móviles) --- */
+@media (max-width: 480px) {
+
+    #menu-item a {
+        color: #fff; /* Color blanco */
+        text-decoration: none; /* Eliminar subrayado */
+        margin: 8px; /* Margen entre los enlaces */
+        font-size: 18px; /* Tamaño de fuente */
+    }
+
+    body {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+    .pelicula {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    .portada img {
+        width: 100%; /* Reducir el tamaño de la imagen */
+    }
+    .informacion h2 {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+    .informacion h3 {
+        font-size: 18px; /* Reducir tamaño de los subtítulos */
+    }
+    .informacion p {
+        font-size: 14px; /* Reducir el tamaño de los párrafos */
+    }
+    footer p {
+        font-size: 14px; /* Reducir tamaño del texto en el pie de página */
+    }
+}
